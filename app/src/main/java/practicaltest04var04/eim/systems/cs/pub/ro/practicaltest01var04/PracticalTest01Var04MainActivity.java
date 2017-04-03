@@ -65,6 +65,7 @@ public class PracticalTest01Var04MainActivity extends AppCompatActivity {
     public void onDestroy() {
         Intent intent = new Intent(this, PracticalTest01Var04Service.class);
         stopService(intent);
+        serviceState = false;
         super.onDestroy();
     }
 
